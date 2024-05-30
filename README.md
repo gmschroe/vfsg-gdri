@@ -4,6 +4,17 @@ I made these visualisations for the [May 2024 Viz for Social Good project](https
 
 ## Visualisations
 
+<kbd>
+  <img src = "plots/R_plot_sign_language_1.png" width="750">
+</kbd>
+
+<kbd>
+  <img src = "plots/R_plot_sign_language_2.png" width="750">
+</kbd>
+
+<kbd>
+  <img src = "plots/R_plot_sign_language_3.png" width="750">
+</kbd>
 
 ## Data story
 
