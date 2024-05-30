@@ -1,12 +1,12 @@
+# Two visualisations on when deaf Nigerians learned sign language relative to
+# when they began experiencing hearing loss
+
 # Set up ----
 
 rm(list = ls())
 library(dplyr)
 library(ggplot2)
 library(glue)
-library(hexbin)
-library(patchwork)
-library(monochromeR)
 library(ggtext)
 
 source(file.path('lib', 'lib_data.R'))

@@ -200,3 +200,33 @@ vfsg_logo_layer <- function(
   
   return(vfsg_layer)
 }
+
+# Annotations for area plot squares
+make_square_annotation <- function(
+    n,
+    label,
+    n_dark = TRUE,
+    label_dark = TRUE,
+    sz_n = 28,
+    sz_label = 10
+) {
+  
+  theme_colours <- get_theme_colours()
+  
+  if (label_dark) {
+    clr_label <- theme_colours$grey_dark
+  } else {
+    clr_label <- theme_colours$white
+  }
+  if (n_dark) {
+    clr_n <- theme_colours$grey_dark
+  } else {
+    clr_n <- theme_colours$white
+  }
+  
+  text_square <- paste0( 
+    glue::glue('<b style="font-size:{sz_n}pt; color: {clr_n};">{n}</b>'),
+    glue::glue('<span style="font-size:{sz_label}pt; color: {clr_label};"> {label}</span>')
+  )
+  return(text_square)
+}

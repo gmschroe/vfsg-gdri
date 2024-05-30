@@ -155,6 +155,9 @@ compute_additional_sl_variables <- function(data_gdri) {
   
   # Add "knows sign language" variable based on combined info from the 
   # languages and sign language fluency questions
+  # Note:
+  #    TRUE | NA --> TRUE (will be true if languages include SL, even if no fluency response)
+  #    FALSE | NA --> NA (will be NA if languages do not include SL and no fluency response)
   data_gdri <- data_gdri |>
     mutate(
       knows_sl = (languages_include_any_sl | how_fluent_sl_num >= 3)

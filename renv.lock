@@ -286,23 +286,6 @@
       ],
       "Hash": "e18861963cbc65a27736e02b3cd3c4a0"
     },
-    "hexbin": {
-      "Package": "hexbin",
-      "Version": "1.28.3",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Requirements": [
-        "R",
-        "grDevices",
-        "graphics",
-        "grid",
-        "lattice",
-        "methods",
-        "stats",
-        "utils"
-      ],
-      "Hash": "124e384c01d8746f1c12f9dc1b80a161"
-    },
     "hms": {
       "Package": "hms",
       "Version": "1.1.3",
@@ -488,24 +471,6 @@
       ],
       "Hash": "02e3c6e7df163aafa8477225e6827bc5"
     },
-    "patchwork": {
-      "Package": "patchwork",
-      "Version": "1.2.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "cli",
-        "ggplot2",
-        "grDevices",
-        "graphics",
-        "grid",
-        "gtable",
-        "rlang",
-        "stats",
-        "utils"
-      ],
-      "Hash": "9c8ab14c00ac07e9e04d1664c0b74486"
-    },
     "pillar": {
       "Package": "pillar",
       "Version": "1.9.0",
@@ -581,17 +546,6 @@
         "vctrs"
       ],
       "Hash": "1cba04a4e9414bdefc9dcaa99649a8dc"
-    },
-    "ragg": {
-      "Package": "ragg",
-      "Version": "1.3.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "systemfonts",
-        "textshaping"
-      ],
-      "Hash": "e3087db406e079a8a2fd87f413918ed3"
     },
     "readxl": {
       "Package": "readxl",
@@ -698,6 +652,18 @@
       ],
       "Hash": "960e2ae9e09656611e0b8214ad543207"
     },
+    "svglite": {
+      "Package": "svglite",
+      "Version": "2.1.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cpp11",
+        "systemfonts"
+      ],
+      "Hash": "124a41fdfa23e8691cb744c762f10516"
+    },
     "systemfonts": {
       "Package": "systemfonts",
       "Version": "1.1.0",
@@ -709,19 +675,6 @@
         "lifecycle"
       ],
       "Hash": "213b6b8ed5afbf934843e6c3b090d418"
-    },
-    "textshaping": {
-      "Package": "textshaping",
-      "Version": "0.4.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "cpp11",
-        "lifecycle",
-        "systemfonts"
-      ],
-      "Hash": "5142f8bc78ed3d819d26461b641627ce"
     },
     "tibble": {
       "Package": "tibble",
