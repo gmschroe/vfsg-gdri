@@ -28,6 +28,20 @@ GDRI expressed a need for visualisations for multiple scenarios (e.g., communica
 
 I used GDRI branding from their logo and website. I used their main colours (sky blue and dark greys) for most of the visual elements and selected a constrasting accent colour (dark mustard yellow) based on some of the photos on their website. The titles use their website font, Questrial. I paired this font with Lexend, which (to my beginner typographer eyes) shares many similar features with Questrial. Lexend has more open aperatures than Questrial, however, making it easier to read at small font sizes, and it's also generally designed for accessibility. Lexend also has more available font weights than Questrial, which is useful for emphasising subsets of text in annotations.
 
+## Data decisions
+
+For my first visualisation on the number of sign language users, I combined information from the "Languages you use comfortably" and "How fluent are you in sign language?" variables due to limitations in the first variable - namely, many people who were fluent in sign language did not list a sign language in their languages (see "Data recommendations" below). 
+
+I considered someone fluent in sign language if they listed sign language in their languages or if they had at least a "neither good nor bad" level of sign language fluency. I chose this fluency cutoff for two reasons: 1) it suggested a decent level of sign language knowledge, and 2) 8 people who listed this fluency level also listed sign language in "Languages you use comfortably", suggesting it does provide a sufficient fluency level for their needs. Meanwhile, no one with lower fluency levels listed sign language in their languages.
+
+I changed all the text in the languages lists to lowercase to make text searching easier, then identified specific sign languages by looking for certain phrases (determined by looking through the possible responses):
+- NSL: "nsl", "n.s.l", "nigeria sign language", and "nigerian sign language"
+- ASL: "asl", "a.s.l", "america sign language", "english language (sign language", "english language of sign language", "english sign language for the deaf", or "sign language-english"
+
+I did *not* include "english sign language" alone as an ASL search string because in some cases, multiple languages were listed without punctuation (e.g., "english hausa fulani sign language"). As such, it wasn't possible to determine if "english sign language" meant "ASL" or two separate languages (i.e., English and a sign language). This conservative approach potentially missed up to seven ASL users who used this phrasing.
+
+Otherwise, respondents who 1) listed an unspecified/indetermine sign language or 2) expressed fluency in sign language, but didn't list a sign language in their languages, were marked as knowing an unspecified sign language.
+
 ## Data recommendations
 
 Since this data was collected as part of a pilot survey, GDRI also asked VFSG volunteers to share any recommendations for future data collection. After working with this data, I have a few recommendations:
