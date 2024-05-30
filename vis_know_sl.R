@@ -153,12 +153,12 @@ label_both <- data.frame(
 
 label_unspecified <- data.frame(
   x = square_know_sl$x[4], y = square_know_sl$y[4],
-  label = make_square_annotation(n$unspecified_sl, "did not specify the sign language", sz_n = 10)
+  label = make_square_annotation(n$unspecified_sl, "did not specify the sign language")
 )
 
 vfsg_width <- 1.55
 vfsg_x <- 0.3
-vfsg_y <- -2.9
+vfsg_y <- -2.15
 
 # Plot -------------------------------------------------------------------------
 
@@ -265,7 +265,7 @@ ggplot() +
     vjust = 0, hjust = 1, halign = 1
   ) +
   coord_fixed(clip = "off") +
-  scale_y_continuous(expand = c(0.075, 0)) +
+  scale_y_continuous(limits = c(0, (w_know_sl + gap/2)), expand = c(0.02, 0)) +
   scale_x_continuous(limits = c(0, (w_know_sl + w_no_response + gap)*1.05), expand = c(0.05, 0)) +
   labs(
     title = text_title,
@@ -293,5 +293,5 @@ ggplot() +
 
 plot_dir <- 'plots'
 file_name <- file.path(plot_dir, glue::glue('R_plot_sign_language_1.png'))
-ggsave(file_name, width = 8, height = 9, units = "in", dpi = 300)
+ggsave(file_name, width = 8, height = 9, units = "in", dpi = 600)
 

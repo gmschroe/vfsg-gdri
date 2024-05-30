@@ -37,8 +37,8 @@ theme_colours <- get_theme_colours()
 clr_text_highlight <- theme_colours$gold
 text_caption <- paste0(
   'Designed by Gabrielle M. Schroeder for VFSG<br>',
-  glue::glue('Survey size: {n_surveyed} people ({n_surveyed - n_responded} nonrespondents)'),
-  '<br>Data: Global Deaf Research Institute'
+  'Data: Global Deaf Research Institute<br>',
+  glue::glue('Survey size: {n_surveyed} people ({n_surveyed - n_responded} nonrespondents)')
 )
 
 # Plot 2 -----------------------------------------------------------------------
