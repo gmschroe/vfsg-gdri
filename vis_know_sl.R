@@ -112,9 +112,12 @@ text_caption <- paste0(
   '<b>ASL</b>: American Sign Language, <b>NSL</b>: Nigerian Sign Language'
 )
 
+sz_n_large <- 28
+sz_label_large <- 12
+
 label_know_sl <- data.frame(
   x = 0, y = w_know_sl,
-  label = make_square_annotation(n$know_sl, "are fluent in sign language", sz_n = 32, sz_label = 12)
+  label = make_square_annotation(n$know_sl, "are fluent in sign language", sz_n = sz_n_large, sz_label = sz_label_large)
 )
 
 label_within_know_sl <-
@@ -125,12 +128,12 @@ label_within_know_sl <-
 
 label_not_fluent <- data.frame(
   x = square_not_fluent$x[1], y = w_know_sl,
-  label = make_square_annotation(n$not_fluent_sl, "are not fluent", sz_n = 32, sz_label = 12)
+  label = make_square_annotation(n$not_fluent_sl, "are not fluent", sz_n = sz_n_large, sz_label = sz_label_large)
 )
 
 label_no_response <- data.frame(
   x = square_no_response$x[1], y = square_no_response$y[2],
-  label = make_square_annotation(n$no_response, "did not respond", sz_n = 32, sz_label = 12)
+  label = make_square_annotation(n$no_response, "did not respond", sz_n = sz_n_large, sz_label = sz_label_large)
 )
 
 label_nsl <- data.frame(
@@ -140,7 +143,7 @@ label_nsl <- data.frame(
 
 label_asl <- data.frame(
   x = square_asl$x[1], y = square_asl$y[1],
-  label = make_square_annotation(n$only_asl, "only know <b>ASL<b>")
+  label = make_square_annotation(n$only_asl, "only know <b>ASL<b>", n_dark = FALSE, label_dark = FALSE)
 )
 
 label_both <- data.frame(
@@ -217,20 +220,20 @@ ggplot() +
   geom_textbox_gdri(
     label_nsl,
     width = unit(4, 'inch'),
-    vjust = 0,
-    box.padding = unit(c(0, 0, 2, 0), "pt")
+    box.padding = unit(c(4, 2, 2, 4), "pt")
   ) +
   geom_polygon(
     data = square_asl,
     mapping = aes(x = x, y = y), 
-    fill = theme_colours$pal_discrete[3],
+    fill = theme_colours$pal_discrete[2],
     colour = clr_border,
     size = sz_border
   ) +
   geom_textbox_gdri(
     label_asl,
     width = unit(4, 'inch'),
-    box.padding = unit(c(6, 0, 0, 0), "pt")
+    vjust = 0,
+    box.padding = unit(c(4, 2, 2, 4), "pt")
   ) +
   geom_polygon(
     data = square_both,
@@ -254,7 +257,7 @@ ggplot() +
     mapping = aes(x = x, y = y, xend = xend, yend = yend),
     linewidth = 0.5,
     arrow = arrow(length = unit(5, 'pt'), type = "closed"),
-    colour = theme_colours$grey_mid
+    colour = "black"
   ) +
   geom_textbox_gdri(
     label_unspecified,

@@ -14,7 +14,7 @@ get_theme_colours <- function() {
     blue_light = '#b3e1f5',
     gold = '#C78D10',
     gold_light = '#E09F12',
-    gold_dark = '#9E700D',
+    gold_dark = '#7D590A', #'#9E700D',
     white = '#FFFFFF',
     grey_light = '#BFBFBF',
     grey = '#616161',
@@ -207,7 +207,7 @@ make_square_annotation <- function(
     label,
     n_dark = TRUE,
     label_dark = TRUE,
-    sz_n = 28,
+    sz_n = 16,
     sz_label = 10
 ) {
   
