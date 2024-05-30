@@ -109,7 +109,7 @@ text_subtitle <- paste(
 text_caption <- paste0(
   'Designed by Gabrielle M. Schroeder for VFSG<br>',
   'Data: Global Deaf Research Institute<br>',
-  '<b>ASL</b>: American Sign Language, <b>NSL</b>: Nigerian Sign Language'
+  '<b>NSL</b>: Nigerian Sign Language, <b>ASL</b>: American Sign Language'
 )
 
 sz_n_large <- 28
