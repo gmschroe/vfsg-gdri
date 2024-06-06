@@ -68,8 +68,9 @@ During the project kick-off, GDRI emphasised that there are different deaf popul
 
 ## Code
 
-All visualisations were made using the R programming language.
+All visualisations were made using the R programming language. Portions of the code can be reused for future GDRI research - however, it will need to be adapted to new data sets. For example, the data wrangling steps here address the needs of these particular survey responses; another survey, with different responses, may require different cleaning steps. Additional, some of the visualisations have "hard coded" elements (e.g., the positions of some of the annotations) that would need to be manually changed for other data sets. Additionally, other surveys will likely have different results that should be highlighted using different visualisation approaches or annotations!
 
+R for Data Science and the associated communities are great resources for learning how to use R for data analysis. The book covers many of the approaches I used here.
 Code dependencies:
 - [GDRI data](https://www.vizforsocialgood.com/join-a-project/2024/global-deaf-research-institute) (add to the `data` folder)
 - Font files for [Questrial](https://fonts.google.com/specimen/Questrial) and [Lexend](https://fonts.google.com/specimen/Lexend). Functions in `lib/lib_theme.R` that use these files have an optional argument for specifying the path to your local directory that contains font files.
